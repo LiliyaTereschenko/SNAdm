@@ -1,0 +1,2 @@
+#jobs - check status, jobs -l - check pid
+tail -f /var/log/syslog &

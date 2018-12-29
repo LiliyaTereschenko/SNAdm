@@ -1,0 +1,2 @@
+#cat /root/.ssh/id_rsa.pub
+cat /root/.ssh/authorized_keys

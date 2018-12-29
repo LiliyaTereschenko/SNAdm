@@ -1,0 +1,4 @@
+# service sshd status
+# pgrep sshd
+ps -aux | grep sshd | head -1
+
