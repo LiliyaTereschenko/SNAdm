@@ -1,5 +1,1 @@
-printf "%-25s | %5s | %s\n" "LOGIN" "UID" "PATH"
-cat /etc/passwd |
-awk -F ':' '{
-		printf "%-25s | %5d | %s\n", $1, $3, $6
-}'
+awk 'BEGIN {FS=":"; print "login\t\tUID\t\tPath\n"} {print $1,"\t\t", $3, "\t\t" $6}' /etc/passwd

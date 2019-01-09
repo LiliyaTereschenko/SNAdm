@@ -1,1 +1,2 @@
-networksetup -getinfo Ethernet
+#networksetup -getinfo Ethernet
+(ping -c1 $(ifconfig en0 | grep broadcast | cut -d ' ' -f 6) &>/dev/null) && (ifconfig en0 | grep broadcast | cut -d ' ' -f 6) && (arp -a | cut -d '(' -f 2 | cut -d ')' -f 1)

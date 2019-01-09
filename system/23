@@ -1,0 +1,4 @@
+#go to root: sudo su
+#create a new user: adduser USERNAME
+#follow instructions (add password and info)
+#login as a new user
