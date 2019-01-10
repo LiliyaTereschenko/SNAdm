@@ -1,1 +1,7 @@
-sudo userdel $1 
+if [ $1 = $(whoami) ]; then
+	echo You cannot delete $(whoami)
+elif [ $1 = 'root' ]; then
+	echo You cannot delete root-user
+else
+	sudo userdel $1
+fi
